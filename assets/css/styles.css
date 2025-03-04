@@ -1,0 +1,176 @@
+[data-bs-theme=light] {
+    --bs-app-header-base-bg-color: #ffffff;
+    --bs-app-header-base-box-shadow: 0px 10px 30px 0px rgba(82, 63, 105, 0.05);
+    --bs-text-gray-600: #78829D;
+    --bs-text-primary: #1B84FF;
+    --bs-primary-light: #F1FAFF;
+}
+
+.navbar {
+    min-height: 60px;
+    background-color: var(--bs-app-header-base-bg-color);
+    box-shadow: var(--bs-app-header-base-box-shadow);
+}
+
+.navbar .bi {
+    width: auto;
+    height: auto;
+}
+
+.navbar-logo img {
+    max-height: 25px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.fs-1 {
+    font-size: 1.1rem !important;
+}
+
+.app-navbar {
+    display: flex;
+    align-items: stretch;
+}
+
+.app-navbar .app-navbar-item {
+    display: flex;
+    align-items: center;
+}
+
+.btn.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.btn i {
+    color: var(--bs-text-gray-600);
+}
+
+.btn:hover{
+    background-color: var(--bs-primary-light) !important;
+}
+
+.btn:hover, .btn:hover i {
+    color: var(--bs-text-primary);
+}
+
+.btn > i {
+    display: inline-flex;
+    font-size: 1rem;
+    vertical-align: middle;   
+}
+
+
+/*-----------------------------*/
+/*  Dropdown
+/*-----------------------------*/
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--bs-text-primary);
+    background-color: var(--bs-primary-light);
+}
+
+.dropdown-menu {
+    will-change: transform;
+    animation: menu-sub-dropdown-animation-fade-in .3s ease 1,menu-sub-dropdown-animation-move-up .3s ease 1;
+}
+
+.dropdown-menu[data-bs-popper] {
+    --bs-dropdown-spacer:0;
+}
+
+
+
+.h-35px {
+    height: 35px !important;
+}
+.w-35px {
+    width: 35px !important;
+}
+
+.symbol img {
+    display: inline-block;
+    border-radius: 0.475rem;
+}
+
+.symbol-35px > img {
+    width: 35px;
+    height: 35px;
+}
+
+/*-----------------------------*/
+/*  Margins
+/*-----------------------------*/
+.ms-2 {
+    margin-left: .5rem !important;
+}
+
+/*-----------------------------*/
+/*  Media queries
+/*-----------------------------*/
+@media screen and (min-widht: 300px) {
+
+}
+  
+@media only screen and (min-width: 768px) {
+    .w-md-40px {
+        width: 40px !important;
+    }
+    .h-md-40px {
+        height: 40px !important;
+    }
+}
+  
+@media screen and (min-width: 900px) {
+    .navbar {
+        min-height: 70px;
+    }
+    .ms-lg-6 {
+        margin-left: 1.5rem !important;
+    }
+    .me-lg-6 {
+        margin-right: 1.5rem !important;
+    }
+    .symbol-lg-45px > img {
+        width: 45px;
+        height: 45px;
+    }
+}
+  
+@media only screen and (min-width : 1224px) {
+    
+}
+
+
+@keyframes menu-sub-dropdown-animation-fade-in {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes menu-sub-dropdown-animation-move-up {
+    from {
+        margin-top: .75rem
+    }
+
+    to {
+        margin-top: 0
+    }
+}
+
+@keyframes menu-sub-dropdown-animation-move-down {
+    from {
+        margin-bottom: .75rem
+    }
+
+    to {
+        margin-bottom: 0
+    }
+}
