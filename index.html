@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="André Antônio">
-    <title>Lock In - Administração</title>
+    <title>LockIn - Administração</title>
 
     <!-- Bootstrap 5.3.3 -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -13,8 +13,12 @@
     <!-- Custom styles -->
     <link href="assets/css/styles.css" rel="stylesheet">
 
+    <!-- Font Icons -->   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Font Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
 
@@ -29,7 +33,7 @@
 
     <!--begin::Logo-->
     <div class="navbar-logo col-md-3 col-lg-2">
-      <img class="logo theme-light-show" src="assets/images/lockin-logo-dark-2.png" alt="Logo Lock In">
+      <img class="logo theme-light-show" src="assets/images/lockin-logo-dark.png" alt="Logo Lock In">
       <img class="logo theme-dark-show" src="assets/images/lockin-logo-light-2.png" alt="Logo Lock In">
     </div>
     <!--end::Logo-->
@@ -96,7 +100,7 @@
           </div>
           <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
             
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">              
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-2 text-body-secondary text-uppercase">              
               <span>Armário</span>              
             </h6>
             <ul class="nav flex-column">
@@ -120,7 +124,7 @@
               </li>              
             </ul>
   
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-2 text-body-secondary text-uppercase">
               <span>Cartão</span>              
             </h6>
             <ul class="nav flex-column mb-auto">
@@ -138,7 +142,7 @@
               </li>              
             </ul>
 
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-2 text-body-secondary text-uppercase">
               <span>Usuários</span>              
             </h6>
             <ul class="nav flex-column mb-auto">
@@ -165,7 +169,70 @@
       </div>
     </div>
 
+    <!--begin::Register Card-->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-3 mb-3 mt-lg-5 mb-lg-5">
+      <div class="card p-3 p-lg-5">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 mb-lg-5 border-bottom">
+          <h1 class="h2">Cadastrar Cartão</h1>
+        </div>
+        <div class="p-3 p-lg-5 register-card">
+          <div class="circle">
+            <i class="bi bi-wifi big-icon"></i>
+            <h2>Aproxime o Cartão</h2>
+          </div>          
+        </div>
+      </div>
+    </main> 
+    <!--end::Register Card-->
 
+    <!--begin::Register Card-->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-3 mb-3 mt-lg-5 mb-lg-5">
+      <div class="card p-3 p-lg-5">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 mb-lg-5 border-bottom">
+          <h1 class="h2">Cadastrar Cartão</h1>
+        </div>
+        <div class="row d-flex justify-content-center mb-2 mb-lg-5">
+          <div class="p-3 p-lg-5 register-card accepted">
+            <div class="circle">
+              <i class="bi bi-wifi big-icon"></i>
+              <h2>Cartão Lido</h2>
+            </div>          
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <a class="btn custom"><i class="bi bi-floppy me-2"></i>Salvar Cartão</a>
+        </div>
+      </div>
+    </main> 
+    <!--end::Register Card-->
+
+    <!--begin::Quick Assignment-->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-3 mb-3 mt-lg-5 mb-lg-5">
+      <div class="card p-3 p-lg-5">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-4 mb-lg-5 border-bottom">
+          <h1 class="h2">Atribuição Rápida</h1>
+        </div>
+        <div class="quick-assignment" id="quick-assignment">        
+          <a class="locker">
+            <div class="wrapper">
+              <div class="lock">
+                <ul><li></li></ul>         
+              </div>
+              <ul class="air">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <h2>01</h2>
+          </a>
+        </div>
+      </div>
+    </main> 
+    <!--end::Quick Assignment-->
+
+    <!--begin::Dashboard-->
+    <!--
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class=" card mt-2 mt-lg-5 p-5">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -314,19 +381,22 @@
       </div>
     </div>
     </main>
+    -->
+    <!--end::Dashboard-->
   </div>
 </div>
 
-<div class="container-fluid app-footer px-0">
-  <footer class="d-flex flex-wrap justify-content-center align-items-center py-4 mt-3 mt-lg-5">
-    <span class="mb-3 mb-md-0 ">© 2025 Lock In. Todos os direitos reservados.</span>
-  </footer>
-</div>
+<footer class="dcontainer-fluid app-footer px-0">
+  <div class="d-flex flex-wrap justify-content-center align-items-center py-4 mt-3">
+    <span class="mb-3 mb-md-0 ">© 2025 <b>Lock In</b>. Todos os direitos reservados.</span>    
+  </div>   
+</footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/color-modes.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous">
+    </script><script src="assets/js/custom.js"></script>
     </script><script src="assets/js/dashboard.js"></script>
   </body>
 </html>
